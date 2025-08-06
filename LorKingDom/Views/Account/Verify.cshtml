@@ -1,0 +1,20 @@
+﻿@model LorKingDom.ViewModels.VerifyViewModel
+
+<h2>Xác thực tài khoản</h2>
+
+<form asp-action="Verify" method="post">
+    @* Giữ email ở dạng hidden để POST về controller *@
+    <input asp-for="Email" type="hidden" />
+
+    <div class="mb-3">
+        <label asp-for="Code" class="form-label">Mã xác thực</label>
+        <input asp-for="Code" class="form-control" autocomplete="off" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Xác thực</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
