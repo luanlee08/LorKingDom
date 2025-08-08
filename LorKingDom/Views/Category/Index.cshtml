@@ -1,0 +1,166 @@
+﻿@model IEnumerable<LorKingDom.ViewModels.CategoryViewModel>
+
+@{
+	Layout = "_Layout";
+}
+
+<h2>Danh sách thể loại (Category)</h2>
+
+<!-- Nút mở modal Thêm -->
+<button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#createModal">
+	Thêm thể loại
+</button>
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Tên</th>
+			<th>Thể loại cha</th>
+			<th>Ngày tạo</th>
+			<th>Thao tác</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>@item.Name</td>
+				<td>@item.SuperCategoryName</td>
+				<td>@item.CreatedAt.ToString("dd/MM/yyyy")</td>
+				<td>
+					<!-- Sửa -->
+					<button class="btn btn-warning btn-sm" data-bs-toggle="modal"
+							data-bs-target="#editModal"
+							data-id="@item.CategoryId"
+							data-name="@item.Name"
+							data-superid="@item.SuperCategoryId"
+							data-isdeleted="@item.IsDeleted">
+						Sửa
+					</button>
+
+					<!-- Xoá -->
+					<button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+							data-bs-target="#deleteModal"
+							data-id="@item.CategoryId"
+							data-name="@item.Name">
+						Xoá
+					</button>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+<!-- Modal Thêm -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form asp-action="Create" method="post">
+				<div class="modal-header">
+					<h5 class="modal-title">Thêm thể loại</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group mb-2">
+						<label for="Name">Tên thể loại</label>
+						<input name="Name" class="form-control" required />
+					</div>
+					<div class="form-group mb-2">
+						<label for="SuperCategoryId">Thể loại cha</label>
+						<select name="SuperCategoryId" class="form-control" required>
+							<option value="">-- Chọn --</option>
+							@foreach (var super in ViewBag.SuperCategories)
+							{
+								<option value="@super.SuperCategoryId">@super.Name</option>
+							}
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-success">Thêm</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Sửa -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form id="editForm" asp-action="Edit" method="post">
+				<input type="hidden" name="CategoryId" id="editId" />
+				<div class="modal-header">
+					<h5 class="modal-title">Cập nhật thể loại</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group mb-2">
+						<label for="editName">Tên</label>
+						<input type="text" class="form-control" name="Name" id="editName" required />
+					</div>
+					<div class="form-group mb-2">
+						<label for="editSuperCategoryId">Thể loại cha</label>
+						<select class="form-control" name="SuperCategoryId" id="editSuperCategoryId" required>
+							<option value="">-- Chọn --</option>
+							@foreach (var super in ViewBag.SuperCategories)
+							{
+								<option value="@super.SuperCategoryId">@super.Name</option>
+							}
+						</select>
+					</div>
+					
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary">Lưu</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Modal Xoá -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form id="deleteForm" method="post">
+				<input type="hidden" name="id" id="deleteId" />
+				<div class="modal-header">
+					<h5 class="modal-title">Xoá thể loại</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<p>Bạn có chắc chắn muốn xoá thể loại: <strong id="deleteName"></strong>?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-danger">Xoá</button>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+	<script>
+		const editModal = document.getElementById('editModal');
+		editModal.addEventListener('show.bs.modal', function (event) {
+			var button = event.relatedTarget;
+			document.getElementById('editId').value = button.getAttribute('data-id');
+			document.getElementById('editName').value = button.getAttribute('data-name');
+			document.getElementById('editSuperCategoryId').value = button.getAttribute('data-superid');
+			// document.getElementById('editDeleted').checked = button.getAttribute('data-isdeleted') === "True";
+			document.getElementById('editForm').action = '/Category/Edit/' + button.getAttribute('data-id');
+		});
+
+		const deleteModal = document.getElementById('deleteModal');
+		deleteModal.addEventListener('show.bs.modal', function (event) {
+			var button = event.relatedTarget;
+			document.getElementById('deleteId').value = button.getAttribute('data-id');
+			document.getElementById('deleteName').textContent = button.getAttribute('data-name');
+			document.getElementById('deleteForm').action = '/Category/Delete/' + button.getAttribute('data-id');
+		});
+	</script>
+}
