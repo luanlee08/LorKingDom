@@ -690,7 +690,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/8.0.18": {
+      "Microsoft.AspNetCore.Cryptography.Internal/8.0.19": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -703,10 +703,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.18": {
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.19": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "8.0.18"
+          "Microsoft.AspNetCore.Cryptography.Internal": "8.0.19"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
@@ -719,11 +719,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Identity.UI/8.0.18": {
+      "Microsoft.AspNetCore.Identity.UI/8.0.19": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "8.0.18",
-          "Microsoft.Extensions.Identity.Stores": "8.0.18"
+          "Microsoft.Extensions.FileProviders.Embedded": "8.0.19",
+          "Microsoft.Extensions.Identity.Stores": "8.0.19"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Identity.UI.dll": {
@@ -1824,7 +1824,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.FileProviders.Embedded/8.0.18": {
+      "Microsoft.Extensions.FileProviders.Embedded/8.0.19": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0"
@@ -1883,10 +1883,10 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Identity.Core/8.0.18": {
+      "Microsoft.Extensions.Identity.Core/8.0.19": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "8.0.18",
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "8.0.19",
           "Microsoft.Extensions.Logging": "8.0.1",
           "Microsoft.Extensions.Options": "8.0.2"
         },
@@ -1901,11 +1901,11 @@
           }
         }
       },
-      "Microsoft.Extensions.Identity.Stores/8.0.18": {
+      "Microsoft.Extensions.Identity.Stores/8.0.19": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Identity.Core": "8.0.18",
+          "Microsoft.Extensions.Identity.Core": "8.0.19",
           "Microsoft.Extensions.Logging": "8.0.1"
         },
         "compile": {
@@ -4103,10 +4103,10 @@
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.Internal/8.0.18": {
-      "sha512": "bqtqci1dqXewORUT4x9weBZ49KE2pHrV6B/bIzFapx/EN1HSc5tXNCEYoJSTpahYsWVsSjr2rOogIC1ZS+i5Qg==",
+    "Microsoft.AspNetCore.Cryptography.Internal/8.0.19": {
+      "sha512": "XJWKt8NNlPYU2zp618/IUMrQw9Y76aof+fMSRqkhBMpypfe3nWAStvc73qlRtQcGJVRi42I7PWkNbOzOOr5wHQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.internal/8.0.18",
+      "path": "microsoft.aspnetcore.cryptography.internal/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4118,14 +4118,14 @@
         "lib/net8.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
-        "microsoft.aspnetcore.cryptography.internal.8.0.18.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.internal.8.0.19.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.internal.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.18": {
-      "sha512": "l3RDgZtu9Akh/YFzpGkNWqnydxFDr+sxExtC12Tu+px9O61IinfpksWpDRbZVu1dtyQlzKOjVep/yxUT9LOw5g==",
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/8.0.19": {
+      "sha512": "FhhxmC/V9LpmiMtPUgWjjZodgkpTdFYte5wQ+JzEgNMRd3V6eSgjoEWoVtUdg++rvzQKfJMWBHd8hlXp6FXBrQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.keyderivation/8.0.18",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4137,14 +4137,14 @@
         "lib/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
-        "microsoft.aspnetcore.cryptography.keyderivation.8.0.18.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.keyderivation.8.0.19.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Identity.UI/8.0.18": {
-      "sha512": "p/sqeMuM0hgsozOddjBTY1UYKHz4NVOqC1da3rG0P35nQjMdlY9eWym0dijF93vWTMeMX7w7PXBAFNLPFzEKFg==",
+    "Microsoft.AspNetCore.Identity.UI/8.0.19": {
+      "sha512": "NFrFJpIZ2zO9I3UkuGxCDLWufc8e/uRdztPyvt2r6HGv5lWC62jBkOJW+Uy0jVlvWHiVBNVIEBXsEjAGuVDPWw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.identity.ui/8.0.18",
+      "path": "microsoft.aspnetcore.identity.ui/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4159,7 +4159,7 @@
         "buildTransitive/Microsoft.AspNetCore.Identity.UI.targets",
         "lib/net8.0/Microsoft.AspNetCore.Identity.UI.dll",
         "lib/net8.0/Microsoft.AspNetCore.Identity.UI.xml",
-        "microsoft.aspnetcore.identity.ui.8.0.18.nupkg.sha512",
+        "microsoft.aspnetcore.identity.ui.8.0.19.nupkg.sha512",
         "microsoft.aspnetcore.identity.ui.nuspec",
         "staticwebassets/V4/css/site.css",
         "staticwebassets/V4/favicon.ico",
@@ -6103,10 +6103,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.FileProviders.Embedded/8.0.18": {
-      "sha512": "uHAMXifoju+Jb/r8103dghJnhKAvHRT5whwCvSN3zirPYw9uXrZXFSN9InETBIi4eNTkjqXEsq/OcMKJx+QKTw==",
+    "Microsoft.Extensions.FileProviders.Embedded/8.0.19": {
+      "sha512": "9Ij++5nngMd8aE+AZv7jvtqWLta+M6m7V6SHIEmnUpiHUhQFBTMaxQkYuGa9L3ACFFDnUQi8tvVKcA3RnCSi8w==",
       "type": "package",
-      "path": "microsoft.extensions.fileproviders.embedded/8.0.18",
+      "path": "microsoft.extensions.fileproviders.embedded/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6121,7 +6121,7 @@
         "lib/net8.0/Microsoft.Extensions.FileProviders.Embedded.xml",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
         "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
-        "microsoft.extensions.fileproviders.embedded.8.0.18.nupkg.sha512",
+        "microsoft.extensions.fileproviders.embedded.8.0.19.nupkg.sha512",
         "microsoft.extensions.fileproviders.embedded.nuspec",
         "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
       ]
@@ -6182,10 +6182,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Identity.Core/8.0.18": {
-      "sha512": "5+UbhNoI7535QXWIe87PoFwaR9rnVPXc4vyYEd2TO8ZxDdmYJXDMWdDNLYCzdMx/oflRvpN/giL0ROTOWxHTbA==",
+    "Microsoft.Extensions.Identity.Core/8.0.19": {
+      "sha512": "riWtT40hZ3gHSkdUK3+FVHD2dz7pK6axtwDod3qZfo9972TlsdeKQtLhEfbtMN2bxqQzGc1bjjlJOoevLH5Bxw==",
       "type": "package",
-      "path": "microsoft.extensions.identity.core/8.0.18",
+      "path": "microsoft.extensions.identity.core/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6197,14 +6197,14 @@
         "lib/net8.0/Microsoft.Extensions.Identity.Core.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.xml",
-        "microsoft.extensions.identity.core.8.0.18.nupkg.sha512",
+        "microsoft.extensions.identity.core.8.0.19.nupkg.sha512",
         "microsoft.extensions.identity.core.nuspec"
       ]
     },
-    "Microsoft.Extensions.Identity.Stores/8.0.18": {
-      "sha512": "2r+sYR9Njhj3X2AoqZd6fxlUEKy2OlCz+PNYH2AkQTmNJnX/ivrtTbmIkqB3wZ/M5Rv716Y2VNcdC9irmu8/dA==",
+    "Microsoft.Extensions.Identity.Stores/8.0.19": {
+      "sha512": "qKZsubqbazNnC+v6el1rC9IHwJbNGyvuyAaULFA3BEE8xyo7WsEkc+kJRABac7LjJFl25ZUa9DN+xbLtapIBxg==",
       "type": "package",
-      "path": "microsoft.extensions.identity.stores/8.0.18",
+      "path": "microsoft.extensions.identity.stores/8.0.19",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6216,7 +6216,7 @@
         "lib/net8.0/Microsoft.Extensions.Identity.Stores.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.xml",
-        "microsoft.extensions.identity.stores.8.0.18.nupkg.sha512",
+        "microsoft.extensions.identity.stores.8.0.19.nupkg.sha512",
         "microsoft.extensions.identity.stores.nuspec"
       ]
     },

@@ -9,7 +9,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b044e5b-4bfd-4079-adcf-c4fa187757e4" name="Changes" comment="" />
+    <list default="true" id="2b044e5b-4bfd-4079-adcf-c4fa187757e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LorKingDom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LorKingDom/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/LorKingDom/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/FileContentIndex/05b2188b-13cf-405b-acf4-e37ca6b05c93.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/FileContentIndex/8192d482-9bfb-402c-b59e-6e50083f0089.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/FileContentIndex/b0d27537-eb95-465c-9ded-2294480f961c.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/FileContentIndex/e564713e-aa10-497d-b0fa-95527c43a664.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/LorKingDom/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/LorKingDom/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/LorKingDom/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/LorKingDom/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/LorKingDom/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/lorkingdom.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/lorkingdom.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/lorkingdom.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/lorkingdom.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/lorkingdom.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/lorkingdom.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/LorKingDom.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/LorKingDom.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/ref/LorKingDom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/ref/LorKingDom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/refint/LorKingDom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/refint/LorKingDom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/LorKingDom.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/LorKingDom.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/LorKingDom.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/LorKingDom.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LorKingDom/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LorKingDom/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +63,9 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -39,6 +88,7 @@
     &quot;.NET Launch Settings Profile.LorKingDom: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.LorKingDom: https.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -121,6 +171,8 @@
       <workItem from="1754196720838" duration="7655000" />
       <workItem from="1754270398795" duration="15202000" />
       <workItem from="1754359047146" duration="11532000" />
+      <workItem from="1754528574712" duration="3564000" />
+      <workItem from="1754570808595" duration="1173000" />
     </task>
     <servers />
   </component>

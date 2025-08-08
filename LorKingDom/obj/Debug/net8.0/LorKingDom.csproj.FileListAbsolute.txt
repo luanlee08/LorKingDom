@@ -330,3 +330,4 @@ D:\ASP\LorKingDom\LorKingDom\bin\Debug\net8.0\MimeKit.dll
 D:\ASP\LorKingDom\LorKingDom\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\ASP\LorKingDom\LorKingDom\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\ASP\LorKingDom\LorKingDom\obj\Debug\net8.0\LorKingDom.MvcApplicationPartsAssemblyInfo.cs
+D:\ASP\LorKingDom\LorKingDom\obj\Debug\net8.0\LorKingDom.sourcelink.json

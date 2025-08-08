@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\ASP\\LorKingDom\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|d:\\asp\\lorkingdom\\lorkingdom\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|solutionrelative:lorkingdom\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|d:\\asp\\lorkingdom\\lorkingdom\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|solutionrelative:lorkingdom\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|d:\\asp\\lorkingdom\\lorkingdom\\models\\lorkingdomcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|solutionrelative:lorkingdom\\models\\lorkingdomcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|d:\\asp\\lorkingdom\\lorkingdom\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|solutionrelative:lorkingdom\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|d:\\asp\\lorkingdom\\lorkingdom\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|solutionrelative:lorkingdom\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|d:\\asp\\lorkingdom\\lorkingdom\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4DAC5598-CE85-4F6F-BD76-481F82423F8C}|LorKingDom\\LorKingDom.csproj|solutionrelative:lorkingdom\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,20 +102,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ASP\\LorKingDom\\LorKingDom\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LorKingDom\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ASP\\LorKingDom\\LorKingDom\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LorKingDom\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvyEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T03:27:32.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LorKingDomContext.cs",
+              "DocumentMoniker": "D:\\ASP\\LorKingDom\\LorKingDom\\Models\\LorKingDomContext.cs",
+              "RelativeDocumentMoniker": "LorKingDom\\Models\\LorKingDomContext.cs",
+              "ToolTip": "D:\\ASP\\LorKingDom\\LorKingDom\\Models\\LorKingDomContext.cs",
+              "RelativeToolTip": "LorKingDom\\Models\\LorKingDomContext.cs",
+              "ViewState": "AgIAAO8AAAAAAAAAAADwvwIBAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T03:20:58.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\ASP\\LorKingDom\\LorKingDom\\Program.cs",
               "RelativeDocumentMoniker": "LorKingDom\\Program.cs",
               "ToolTip": "D:\\ASP\\LorKingDom\\LorKingDom\\Program.cs",
               "RelativeToolTip": "LorKingDom\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T04:50:04.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T04:50:04.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\ASP\\LorKingDom\\LorKingDom\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "LorKingDom\\Controllers\\AuthController.cs",
@@ -115,12 +147,11 @@
               "RelativeToolTip": "LorKingDom\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T04:43:17.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T04:43:17.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Brand.cshtml",
               "DocumentMoniker": "D:\\ASP\\LorKingDom\\LorKingDom\\Views\\Admin\\Brand.cshtml",
               "RelativeDocumentMoniker": "LorKingDom\\Views\\Admin\\Brand.cshtml",
@@ -132,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\ASP\\LorKingDom\\LorKingDom\\appsettings.Development.json",
               "RelativeDocumentMoniker": "LorKingDom\\appsettings.Development.json",
@@ -144,15 +175,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\ASP\\LorKingDom\\LorKingDom\\appsettings.json",
               "RelativeDocumentMoniker": "LorKingDom\\appsettings.json",
               "ToolTip": "D:\\ASP\\LorKingDom\\LorKingDom\\appsettings.json",
               "RelativeToolTip": "LorKingDom\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-19T05:52:50.79Z"
+              "WhenOpened": "2025-07-19T05:52:50.79Z",
+              "EditorCaption": ""
             }
           ]
         }
