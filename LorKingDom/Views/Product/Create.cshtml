@@ -1,0 +1,179 @@
+﻿@model LorKingDom.ViewModels.ProductCreateViewModel
+@{
+    Layout = "_Layout";
+}
+<h2 class="mb-3">Add New Product</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="row g-3">
+        <div class="col-lg-7">
+            <div class="card mb-3">
+                <div class="card-header fw-bold">🔹 Basic Information</div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label asp-for="Name" class="form-label">Product Name</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Category</label>
+                            <select asp-for="CategoryId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "Name"))">
+                                <option value="">-- Select Category --</option>
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Gender</label>
+                            <select asp-for="SexId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Sexes, "SexId", "Name"))">
+                                <option value="">-- Select Gender --</option>
+                            </select>
+                            <span asp-validation-for="SexId" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Price Range</label>
+                            <select asp-for="PriceRangeId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.PriceRanges, "PriceRangeId", "PriceRange1"))">
+                                <option value="">-- Select Price Range --</option>
+                            </select>
+                            <span asp-validation-for="PriceRangeId" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Brand</label>
+                            <select asp-for="BrandId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Brands, "BrandId", "Name"))">
+                                <option value="">-- Select Brand --</option>
+                            </select>
+                            <span asp-validation-for="BrandId" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Origin</label>
+                            <select asp-for="OriginId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Origins, "OriginId", "Name"))">
+                                <option value="">-- Select Origin --</option>
+                            </select>
+                            <span asp-validation-for="OriginId" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Age Group</label>
+                            <select asp-for="AgeId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Ages, "AgeId", "AgeRange"))">
+                                <option value="">-- Select Age --</option>
+                            </select>
+                            <span asp-validation-for="AgeId" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Material</label>
+                            <select asp-for="MaterialId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Materials, "MaterialId", "Name"))">
+                                <option value="">-- Select Material --</option>
+                            </select>
+                            <span asp-validation-for="MaterialId" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header fw-bold">📝 Product Description</div>
+                <div class="card-body">
+                    <textarea asp-for="Description" rows="7" class="form-control" placeholder="Describe your product in detail..."></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card mb-3">
+                <div class="card-header fw-bold">💲 Pricing & Inventory</div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label asp-for="Price" class="form-label">Price</label>
+                            <input asp-for="Price" class="form-control" type="number" step="0.01" min="0" />
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        <div class="col-12">
+                            <label asp-for="Quantity" class="form-label">Stock Quantity</label>
+                            <input asp-for="Quantity" class="form-control" type="number" min="0" />
+                            <span asp-validation-for="Quantity" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header fw-bold">🖼️ Product Images</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Main Image</label>
+                        <input asp-for="MainImage" class="form-control" type="file" accept="image/*" id="mainImageInput" />
+                        <div class="mt-2">
+                            <img id="mainPreview" style="max-width:100%;height:auto;display:none;" />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Detail Images (Max 8)</label>
+                        <input asp-for="DetailImages" class="form-control" type="file" accept="image/*" multiple id="detailImagesInput" />
+                        <div id="detailPreview" class="d-flex flex-wrap gap-2 mt-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2">
+                <a asp-action="Create" class="btn btn-outline-secondary">Reset</a>
+                <button type="submit" class="btn btn-primary">Add Product</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        const mainInput = document.getElementById('mainImageInput');
+        const mainPreview = document.getElementById('mainPreview');
+        mainInput.addEventListener('change', function () {
+            if (this.files && this.files[0]) {
+                mainPreview.src = URL.createObjectURL(this.files[0]);
+                mainPreview.style.display = 'block';
+            } else {
+                mainPreview.src = '';
+                mainPreview.style.display = 'none';
+            }
+        });
+
+        const detailInput = document.getElementById('detailImagesInput');
+        const detailPreview = document.getElementById('detailPreview');
+        detailInput.addEventListener('change', function () {
+            detailPreview.innerHTML = '';
+            const files = Array.from(this.files || []).slice(0, 8);
+            files.forEach(f => {
+                const img = document.createElement('img');
+                img.src = URL.createObjectURL(f);
+                img.style.maxWidth = '110px';
+                img.style.maxHeight = '110px';
+                img.style.objectFit = 'cover';
+                img.className = 'border rounded';
+                detailPreview.appendChild(img);
+            });
+        });
+    </script>
+}

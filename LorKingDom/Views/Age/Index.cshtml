@@ -1,0 +1,27 @@
+﻿@model IEnumerable<LorKingDom.ViewModels.AgeViewModel>
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Danh sách độ tuổi</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã</th>
+            <th>Độ tuổi</th>
+            <th>Ngày tạo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AgeId</td>
+                <td>@item.AgeRange</td>
+                <td>@item.CreatedAt.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

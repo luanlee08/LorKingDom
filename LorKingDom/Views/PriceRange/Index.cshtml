@@ -1,0 +1,27 @@
+﻿@model IEnumerable<LorKingDom.ViewModels.PriceRangeViewModel>
+
+@{
+	Layout = "_Layout";
+}
+
+<h2>Danh sách khoảng giá</h2>
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Mã</th>
+			<th>Khoảng giá</th>
+			<th>Ngày tạo</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>@item.PriceRangeId</td>
+				<td>@item.PriceRange</td>
+				<td>@item.CreatedAt.ToString("dd/MM/yyyy")</td>
+			</tr>
+		}
+	</tbody>
+</table>

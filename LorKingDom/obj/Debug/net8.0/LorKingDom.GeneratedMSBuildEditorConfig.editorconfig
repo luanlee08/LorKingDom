@@ -17,57 +17,89 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LorKingDom
 build_property.RootNamespace = LorKingDom
-build_property.ProjectDir = D:\ASP\LorKingDom\LorKingDom\
+build_property.ProjectDir = E:\my_project\LorKingDom\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\ASP\LorKingDom\LorKingDom
+build_property.MSBuildProjectDirectory = E:\my_project\LorKingDom
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Account/Login.cshtml]
+[E:/my_project/LorKingDom/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Account/Register.cshtml]
+[E:/my_project/LorKingDom/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Account/Verify.cshtml]
+[E:/my_project/LorKingDom/Views/Account/Verify.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Admin/Brand.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQnJhbmQuY3NodG1s
+[E:/my_project/LorKingDom/Views/Age/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Home/Index.cshtml]
+[E:/my_project/LorKingDom/Views/Brand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Home/Privacy.cshtml]
+[E:/my_project/LorKingDom/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Shared/Error.cshtml]
+[E:/my_project/LorKingDom/Views/Material/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Origin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JpZ2luXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/PriceRange/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VSYW5nZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Sex/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V4XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/my_project/LorKingDom/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/_ViewImports.cshtml]
+[E:/my_project/LorKingDom/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/_ViewStart.cshtml]
+[E:/my_project/LorKingDom/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP/LorKingDom/LorKingDom/Views/Shared/_Layout.cshtml]
+[E:/my_project/LorKingDom/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rr39y8c5pf
