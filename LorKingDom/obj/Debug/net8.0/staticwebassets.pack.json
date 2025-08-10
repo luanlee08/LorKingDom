@@ -249,6 +249,78 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_buhms10u.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_buhms10u.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_c0jha21i.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_c0jha21i.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_d2p2ol0r.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_d2p2ol0r.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_ddfgmuqa.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_ddfgmuqa.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_k5rotfir.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_k5rotfir.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_luwlquww.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_luwlquww.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_mpzrixyc.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_mpzrixyc.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\detail_u3wqdr2b.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\detail_u3wqdr2b.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\3\\main_0qqaoth1.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\3\\main_0qqaoth1.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_arahw1io.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_arahw1io.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_dk2n2dgz.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_dk2n2dgz.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_fwtelvkc.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_fwtelvkc.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_ndmj2o2t.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_ndmj2o2t.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_ntp4kyfg.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_ntp4kyfg.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_w1s5r4oz.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_w1s5r4oz.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_xeyz51he.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_xeyz51he.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\detail_zn3lebpc.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\detail_zn3lebpc.png"
+    },
+    {
+      "Id": "E:\\my_project\\LorKingDom\\wwwroot\\uploads\\products\\5\\main_4s4chmyv.png",
+      "PackagePath": "staticwebassets\\uploads\\products\\5\\main_4s4chmyv.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LorKingDom.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

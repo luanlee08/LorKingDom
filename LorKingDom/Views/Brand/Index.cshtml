@@ -1,0 +1,141 @@
+﻿@model IEnumerable<LorKingDom.ViewModels.BrandViewModel>
+@{
+    Layout = "_Layout";
+}
+
+<h2>Danh sách thương hiệu</h2>
+
+<button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#createModal">
+    Thêm thương hiệu
+</button>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Ngày tạo</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.CreatedAt.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <button class="btn btn-warning btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#editModal"
+                            data-id="@item.BrandId"
+                            data-name="@item.Name">
+                        Sửa
+                    </button>
+
+                    <button class="btn btn-danger btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#deleteModal"
+                            data-id="@item.BrandId"
+                            data-name="@item.Name">
+                        Xoá
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal: Create -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Create" method="post">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title">Thêm thương hiệu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-2">
+                        <label for="Name">Tên thương hiệu</label>
+                        <input name="Name" class="form-control" required maxlength="100" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Thêm</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal: Edit -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Edit" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="BrandId" id="editId" />
+                <input type="hidden" name="id" id="editRouteId" />
+                <div class="modal-header">
+                    <h5 class="modal-title">Cập nhật thương hiệu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-2">
+                        <label for="editName">Tên</label>
+                        <input type="text" class="form-control" name="Name" id="editName" required maxlength="100" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal: Delete -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Delete" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="id" id="deleteId" />
+                <div class="modal-header">
+                    <h5 class="modal-title">Xoá thương hiệu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có chắc muốn xoá thương hiệu: <strong id="deleteName"></strong>?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Xoá</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const editModal = document.getElementById('editModal');
+        editModal.addEventListener('show.bs.modal', function (e) {
+            const b = e.relatedTarget;
+            const id = b.getAttribute('data-id');
+            document.getElementById('editId').value = id;        // model
+            document.getElementById('editRouteId').value = id;   // route param
+            document.getElementById('editName').value = b.getAttribute('data-name');
+        });
+
+        const deleteModal = document.getElementById('deleteModal');
+        deleteModal.addEventListener('show.bs.modal', function (e) {
+            const b = e.relatedTarget;
+            document.getElementById('deleteId').value = b.getAttribute('data-id');
+            document.getElementById('deleteName').textContent = b.getAttribute('data-name');
+        });
+    </script>
+}

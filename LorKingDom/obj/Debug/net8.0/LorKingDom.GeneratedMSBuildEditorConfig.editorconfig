@@ -40,6 +40,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/my_project/LorKingDom/Views/Age/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Brand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/my_project/LorKingDom/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +66,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/my_project/LorKingDom/Views/Origin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JpZ2luXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/PriceRange/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJpY2VSYW5nZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/my_project/LorKingDom/Views/Sex/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V4XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/my_project/LorKingDom/Views/Shared/Error.cshtml]

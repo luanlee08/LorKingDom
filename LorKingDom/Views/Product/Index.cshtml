@@ -1,0 +1,350 @@
+﻿@model IEnumerable<LorKingDom.ViewModels.ProductListItemViewModel>
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    Layout = "_Layout";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Products</h2>
+    <div class="d-flex gap-2">
+        <form method="get" asp-action="Index" class="d-flex">
+            <input type="text" name="q" value="@ViewBag.Q" class="form-control" placeholder="Search name..." />
+            <button class="btn btn-outline-secondary ms-2" type="submit">Search</button>
+        </form>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">+ Add Product</button>
+    </div>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div id="alertMessage" class="alert alert-success">
+        @TempData["Success"]
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+     <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<table class="table table-bordered align-middle">
+    <thead>
+        <tr>
+            <th style="width:110px">Image</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Brand</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">Qty</th>
+            <th style="width:170px">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var p in Model)
+            {
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(p.MainImage))
+                        {
+                            <img src="@p.MainImage" style="width:100px;height:100px;object-fit:cover" class="rounded border" />
+                        }
+                        else
+                        {
+                            <div class="text-muted small">No image</div>
+                        }
+                    </td>
+                    <td>@p.Name</td>
+                    <td>@p.CategoryName</td>
+                    <td>@p.BrandName</td>
+                    <td class="text-end">@String.Format("{0:N0}", p.Price)</td>
+                    <td class="text-end">@p.Quantity</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning"
+                                data-bs-toggle="modal" data-bs-target="#editModal"
+                                data-id="@p.ProductId"
+                                data-name="@p.Name"
+                                data-category="@p.CategoryId"
+                                data-sex="@p.SexId"
+                                data-age="@p.AgeId"
+                                data-material="@p.MaterialId"
+                                data-origin="@p.OriginId"
+                                data-brand="@p.BrandId"
+                                data-pricerange="@p.PriceRangeId"
+                                data-price="@p.Price"
+                                data-qty="@p.Quantity"
+                                data-description="@p.Description">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-sm btn-danger"
+                                data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                data-id="@p.ProductId" data-name="@p.Name">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="7" class="text-center text-muted">No products yet.</td></tr>
+        }
+    </tbody>
+</table>
+
+<!-- CREATE MODAL -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-8">
+                            <label class="form-label">Product Name</label>
+                            <input name="Name" class="form-control" required />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Price</label>
+                            <input name="Price" type="number" step="0.01" min="0" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Category</label>
+                            <select name="CategoryId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "Name"))" required>
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Brand</label>
+                            <select name="BrandId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Brands, "BrandId", "Name"))" required>
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Price Range</label>
+                            <select name="PriceRangeId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.PriceRanges, "PriceRangeId", "PriceRange1"))" required>
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Gender</label>
+                            <select name="SexId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Sexes, "SexId", "Name"))" required>
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Age</label>
+                            <select name="AgeId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Ages, "AgeId", "AgeRange"))" required>
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Material</label>
+                            <select name="MaterialId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Materials, "MaterialId", "Name"))" required>
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-8">
+                            <label class="form-label">Origin</label>
+                            <select name="OriginId" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Origins, "OriginId", "Name"))" required>
+                                <option value="">-- Select --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Quantity</label>
+                            <input name="Quantity" type="number" min="0" class="form-control" required />
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Description</label>
+                            <textarea name="Description" rows="3" class="form-control"></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Main Image</label>
+                            <input name="MainImage" type="file" accept="image/*" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Detail Images (max 8)</label>
+                            <input name="DetailImages" type="file" accept="image/*" class="form-control" multiple />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- EDIT MODAL -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <form id="editForm" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="editId" />
+                    <div class="row g-3">
+                        <div class="col-md-8">
+                            <label class="form-label">Product Name</label>
+                            <input name="Name" id="editName" class="form-control" required />
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Price</label>
+                            <input name="Price" id="editPrice" type="number" step="0.01" min="0" class="form-control" required />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Category</label>
+                            <select name="CategoryId" id="editCategory" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Categories, "CategoryId", "Name"))"></select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Brand</label>
+                            <select name="BrandId" id="editBrand" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Brands, "BrandId", "Name"))"></select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Price Range</label>
+                            <select name="PriceRangeId" id="editPriceRange" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.PriceRanges, "PriceRangeId", "PriceRange1"))"></select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Gender</label>
+                            <select name="SexId" id="editSex" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Sexes, "SexId", "Name"))"></select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Age</label>
+                            <select name="AgeId" id="editAge" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Ages, "AgeId", "AgeRange"))"></select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Material</label>
+                            <select name="MaterialId" id="editMaterial" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Materials, "MaterialId", "Name"))"></select>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">Origin</label>
+                            <select name="OriginId" id="editOrigin" class="form-select"
+                                    asp-items="@(new SelectList(ViewBag.Origins, "OriginId", "Name"))"></select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Quantity</label>
+                            <input name="Quantity" id="editQty" type="number" min="0" class="form-control" required />
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Description</label>
+                            <textarea name="Description" id="editDesc" rows="3" class="form-control"></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Replace Main Image (optional)</label>
+                            <input name="MainImage" type="file" accept="image/*" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Add Detail Images (optional)</label>
+                            <input name="DetailImages" type="file" accept="image/*" class="form-control" multiple />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- DELETE MODAL -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="deleteForm" method="post">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title">Delete Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="deleteId" />
+                    <p>Bạn chắc chắn muốn xoá: <strong id="deleteName"></strong>?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Edit modal
+        const editModal = document.getElementById('editModal');
+        editModal.addEventListener('show.bs.modal', function (e) {
+            const b = e.relatedTarget;
+            const id = b.getAttribute('data-id');
+            document.getElementById('editId').value = id;
+            document.getElementById('editName').value = b.getAttribute('data-name') || '';
+            document.getElementById('editPrice').value = b.getAttribute('data-price') || 0;
+            document.getElementById('editQty').value = b.getAttribute('data-qty') || 0;
+            document.getElementById('editDesc').value = b.getAttribute('data-description') || '';
+
+            document.getElementById('editCategory').value   = b.getAttribute('data-category') || '';
+            document.getElementById('editBrand').value      = b.getAttribute('data-brand') || '';
+            document.getElementById('editPriceRange').value = b.getAttribute('data-pricerange') || '';
+            document.getElementById('editSex').value        = b.getAttribute('data-sex') || '';
+            document.getElementById('editAge').value        = b.getAttribute('data-age') || '';
+            document.getElementById('editMaterial').value   = b.getAttribute('data-material') || '';
+            document.getElementById('editOrigin').value     = b.getAttribute('data-origin') || '';
+
+            document.getElementById('editForm').action = '/Product/Edit/' + id;
+        });
+
+        // Delete modal
+        const delModal = document.getElementById('deleteModal');
+        delModal.addEventListener('show.bs.modal', function (e) {
+            const b = e.relatedTarget;
+            const id = b.getAttribute('data-id');
+            document.getElementById('deleteId').value = id;
+            document.getElementById('deleteName').textContent = b.getAttribute('data-name') || '';
+            document.getElementById('deleteForm').action = '/Product/Delete/' + id;
+        });
+
+        setTimeout(function () {
+            const alertBox = document.getElementById('alertMessage');
+            if (alertBox) {
+                alertBox.style.transition = "opacity 0.5s ease";
+                alertBox.style.opacity = "0";
+                setTimeout(() => alertBox.remove(), 500); 
+            }
+        }, 2000);
+    </script>
+}
